@@ -36,3 +36,6 @@ console.log(cuenta.VerSaldo())
 
 const animal1 = new perro ( "Paco");
 animal1.hablar();
+
+const animal2 = new gato ( "michi");
+animal2.hablar();
