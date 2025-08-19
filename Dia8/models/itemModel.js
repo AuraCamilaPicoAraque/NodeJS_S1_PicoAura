@@ -28,14 +28,20 @@ class ItemModel {
     this._items.push(nuevo);
     return nuevo;
 
+
+
     }
     listar(){
         return [...this._items];
     }
 
+
+
     buscarPorId(id){
         return this._items.find(i => i.id === Number(id)) || null;
     }
+
+
 
     actualizar(id,{nombre,descripcion}){
         const item = this.buscarPorId(id);
@@ -46,6 +52,8 @@ class ItemModel {
         return item;
     }
 
+    
+
     eliminar(id){ // idx -> indice o index
         const idx = this._items.findIndex(i => i["id"] === Number(id));
         if (idx === -1) return false;
@@ -53,5 +61,4 @@ class ItemModel {
     }
 }
 
-module.exports = {ItemModel};
-
+module.exports= {ItemModel};
